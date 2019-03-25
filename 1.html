@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>juqery弹幕</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            font-family: "微软雅黑";
+            background-color: #ccc;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .string {
+            width: 300px;
+            height: 40px;
+            margin-top: 20px;
+            position: absolute;
+            color: #000;
+            font-size: 20px;
+            font-family: "微软雅黑";
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxDom" id="boxDom">
+        <!-- <img src="7.jpg" alt=""> -->
+        <!-- <div class="idDom">
+            <div class="content">
+                <p class="title">发送弹幕:</p>
+                <input type="text" class="text">
+                <button class="btn" id="btn" type="button">发送</button>
+            </div>
+        </div> -->
+    </div>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function () {
+            var boxDom = $("#boxDom");
+            var top, right;
+            var pageWidth = parseInt($(document).width());
+            var pageHeight = parseInt($(document).height());
+            var text = ["aaaaaa","bbbbbb","cccccc","dddddd","eeeeee","ffffff","gggggg","hhhhhh","iiiiii","jjjjjj","kkkkkk",
+            "llllllll","mmmmm","nnnnnn","ooooooo","pppppp","qqqqq","rrrrrr","ssssss","tttttt","uuuuuu","vvvvvv","wwwwww"]
+            $.each(text,function(i,str){
+                setTimeout(() => {
+                    auto(str);
+                }, i*500);
+            })
+            function auto(str) {
+                //生成一个元素
+                var createSpan = $("<span class ='string'></span>");
+                //给元素赋值
+                createSpan.text(str);
+                //生成元素一个随机的位置 为了使每一条弹幕都出现不同的位置
+                top = Math.floor(Math.random() * pageHeight*0.5);
+                createSpan.css({
+                    "top": top,
+                    "right": -400,
+                    "color": getRandomColor()
+                });
+                boxDom.append(createSpan);
+                //元素在dom运动起来
+                //首先有一个span，只让最后一个动起来
+                var spandom = $("#boxDom>span:last-child"); //找到最后一个span
+                spandom.animate({
+                    "right": pageWidth + 300
+                }, 10000, function () {
+                    $(this).remove();
+                });
+            }
+            //定义一个可以生成随机颜色的方法
+            function getRandomColor() { 
+                var colorArr = ['1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'];
+                var color = "";
+                for (var i = 0; i < 6; i++) {
+                    color += colorArr[Math.floor(Math.random() * 16)];
+                }
+                return "#" + color;
+            }
+        })
+    </script>
+</body>
+
+</html>
