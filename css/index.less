@@ -1,0 +1,322 @@
+// 头部
+header {
+    padding: 1rem 1rem 0;
+    height: 3rem;
+    background-image: linear-gradient(90deg, #0af, #0085ff);
+
+    .head-addr {
+        font-size: 1.5rem;
+        color: #fff;
+        font-weight: 700;
+
+        div {
+            width: 60%;
+            color: #fff;
+        }
+
+        span {
+            width: 0;
+            height: 0;
+            border-width: 0.3rem;
+            border-style: solid;
+            border-color: #fff transparent transparent;
+            position: relative;
+            left: 0.5rem;
+            top: 1rem;
+        }
+    }
+}
+
+//搜索栏
+.search {
+    height: 2.8rem;
+    padding: 0.7rem 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-image: linear-gradient(90deg, #0af, #0085ff);
+
+    a {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        color: #999;
+        font-size: 1.2rem;
+
+        i {
+            font-size: 1.2rem;
+            margin-right: 0.3rem;
+        }
+    }
+}
+
+// 菜单
+.menu {
+
+    .swiper-container {
+        width: 100%;
+        height: 12rem;
+        // margin-top: 3.rem;
+        margin-left: auto;
+        margin-right: auto;
+        // background-color: red;
+    }
+
+    .swiper-pagination-bullet {
+        width: 0.8rem;
+        height: 0.2rem;
+        background: #000;
+        opacity: .2;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: #00a6ff;
+    }
+}
+
+.menu-img>div {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    align-content: flex-start;
+
+    a {
+        width: 20%;
+        display: inline-block;
+        margin-top: 0.4rem;
+        height: 4.4rem;
+
+        // background-color: blue;
+        img {
+            width: 3rem;
+            height: 3rem;
+            display: block;
+            margin: 0 auto;
+        }
+
+        p {
+            margin-top: 0.4rem;
+            height: 0.8rem;
+            line-height: 0.8rem;
+            text-align: center;
+            transform: scale(.8)
+        }
+    }
+}
+
+
+// 推荐
+.tuijian {
+    width: 95%;
+    margin: 0 auto;
+
+    >div {
+        margin-bottom: .1rem;
+    }
+
+    .pingzhi {
+        height: 7.2rem;
+        padding: 0.8rem 0 0 1rem;
+        background: linear-gradient(0deg, #f4f4f4 5%, #fafafa 95%);
+        position: relative;
+
+        h3 {
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+
+        .dapei {
+            font-size: 1.2rem;
+            margin-top: .4rem;
+            margin-bottom: .6rem;
+            color: #777;
+        }
+
+        .buy {
+            color: #af8260;
+            font-weight: 700;
+        }
+
+        img {
+            width: 10rem;
+            position: absolute;
+            top: .5rem;
+            right: .5rem;
+        }
+    }
+}
+
+//超级会员
+.super {
+    padding: 0 1rem;
+    height: 2.8rem;
+    background-image: linear-gradient(90deg, #ffefc4, #f3dda0);
+    line-height: 2.5rem;
+    position: relative;
+
+    img {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+
+    span:nth-of-type(1) {
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+
+    span:nth-of-type(3) {
+        position: absolute;
+        right: .5rem;
+    }
+
+    span:nth-of-type(3):first-letter {
+        font-size: 1.6rem;
+        color: #bd8f22;
+        font-weight: 700;
+    }
+
+}
+
+//轮播
+.lunbo {
+
+    .swiper-container {
+        width: 100%;
+        height: 6.5rem;
+
+        .swiper-wrapper {
+            width: 100%;
+
+        }
+
+        .swiper-slide {
+            width: 100%;
+
+            img {
+                width: 100%;
+                height: 6.5rem;
+            }
+        }
+    }
+
+    .swiper-pagination-bullet {
+        width: 0.8rem;
+        height: 0.2rem;
+        background: #000;
+        opacity: .2;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: #00a6ff;
+    }
+
+
+}
+
+// 内容
+.shop-title {
+    text-align: center;
+    font-size: 1.4rem;
+    margin: 1rem auto;
+    position: relative;
+
+    &::before,
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        border: none;
+        width: 1.4rem;
+        height: 1px;
+        background-color: #999;
+        top: 50%;
+        left: 50%;
+    }
+
+    &::before {
+        transform: translateY(-50%) translateX(-4.5rem)
+    }
+
+    &::after {
+        transform: translateY(-50%) translateX(3.1rem)
+    }
+}
+
+
+// 订单
+.dindan {
+    >img {
+        display: block;
+        width: 50%;
+        margin: 6rem auto 0;
+    }
+
+    >h2 {
+        text-align: center;
+        color: #6a6a6a;
+        font-weight: 400;
+        margin: 1rem 0;
+        font-size: 1.5rem;
+    }
+
+    >p {
+        text-align: center;
+        color: #999;
+        font-size: 1rem;
+
+        span {
+            display: inline-block;
+            transform: rotate(90deg);
+        }
+    }
+}
+
+.dindanlist {
+    position: relative;
+    display: none;
+    justify-content: start;
+    margin-top: 0.4rem;
+    padding: 1rem 0 0 1.2rem;
+
+    img {
+        margin-right: 0.5rem;
+        width: 3rem;
+        height: 3rem;
+    }
+
+    h2 {
+        margin-top: 0.5rem;
+        font-size: 1.3rem;
+        color: #333;
+
+        span {
+            position: absolute;
+            right: 2rem;
+            transform: scale(0.8)
+        }
+    }
+
+    p {
+        transform: scale(0.7);
+        position: absolute;
+        left: 3.5rem;
+        color: #999;
+    }
+
+    h3 {
+        color: #666;
+        margin-top: 2rem;
+        padding: 1rem 0;
+        border-top: 1px solid #eee;
+        width: 100%;
+
+        span {
+            color: #333;
+
+            font-weight: 700;
+        }
+    }
+}

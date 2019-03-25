@@ -1,0 +1,194 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+li,
+form,
+input,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0 auto;
+    padding: 0;
+    font-family: "微软雅黑";
+    color: #00C7C7
+}
+
+ul,
+li,
+dl,
+dt,
+dd {
+    display: block;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.none {
+    display: none;
+}
+
+.loan_jm1 {
+    width: 94%;
+    margin: 0 auto;
+}
+
+.loan_jm_spa1 {
+    width: 39%;
+    height: 4rem;
+    line-height: 4rem;
+    font-size: 1em;
+    color: #666;
+    display: block;
+    float: left;
+}
+
+.loan_jm_l1 {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    height: 4rem;
+}
+
+.wbk_srn {
+    width: 57%;
+    height: 4rem;
+    border: 1px solid #ccc;
+    background: #FFF;
+    float: left;
+    padding-left: 3%;
+    line-height: 4rem;
+    color: #ADADAD;
+    font-size: 1.1em;
+    background-size: 45%;
+    background-position: center;
+    background: #fff;
+}
+
+.wbk_srn b {
+    width: 3rem;
+    height: 4rem;
+    border: 1px solid #ccc;
+    background: #FFF;
+    float: left;
+    padding-left: 3%;
+    line-height: 4rem;
+    color: #ADADAD;
+    font-size: 1.1em;
+}
+
+/*显示点击是哪个字母*/
+.showLetter {
+    position: fixed;
+    color: #00C7C7;
+    width: 5rem;
+    height: 5rem;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    border: #00C7C7 1px solid;
+    text-align: center;
+    display: none;
+}
+
+.showLetter span {
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 3rem;
+}
+
+/*城市弹层*/
+
+.letter {
+    width: auto;
+    position: fixed;
+    top: 10%;
+    right: 1rem;
+    text-align: center;
+}
+
+.letter ul {
+    list-style-type: none;
+}
+
+.letter ul li a {
+    text-decoration: none;
+    color: #00C7C7;
+}
+
+.city {
+    width: 90%;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.city-list {
+    width: 100%;
+}
+
+.city-list .city-letter {
+    display: inline-block;
+    padding-top: 0.8rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #e8ecf1;
+    width: 100%;
+}
+
+.city-list p {
+    color: #afafaf;
+    width: 95%;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    border-bottom: 1px solid #e8ecf1;
+    cursor: pointer;
+}
+
+.UISelect {
+    margin-top: 5px
+}
+
+.h-title,
+.h-input {
+    height: 3rem;
+    background-image: linear-gradient(90deg, #0af, #0085ff);
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    position: relative;
+    text-align: center;
+    line-height: 3rem;
+}
+
+.h-title a span {
+    font-size: 2.6rem;
+    position: absolute;
+    left: 1rem;
+    color: #fff;
+}
+
+.h-input input {
+    width: 80%;
+    height: 2.2rem;
+    margin: 0.4rem auto;
+    border-radius: 1.1rem;
+    text-indent: 2rem;
+    outline: none;
+}

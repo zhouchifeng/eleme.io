@@ -1,0 +1,29 @@
+.foot {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 -150px 300px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  z-index: 999;
+  height: 3rem;
+  padding-top: .6rem;
+  display: flex;
+  justify-content: space-around;
+}
+.foot > a {
+  display: block;
+  width: 25%;
+  text-align: center;
+  color: #8e8e93;
+}
+.foot > a i {
+  display: inline-block;
+  font-size: 1.6rem;
+}
+.foot > a p {
+  transform: scale(0.8);
+}
+.foot .fblue {
+  color: #0089dc;
+}

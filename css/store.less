@@ -1,0 +1,164 @@
+body {
+    background-color: #f5f5f5;
+}
+
+.store-title {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    margin-bottom: 0.5rem;
+
+    >div {
+        width: 50%;
+        padding: 1rem;
+        text-align: center;
+
+        &:nth-child(1) {
+            border-right: 1px solid #f5f5f5;
+        }
+    }
+
+    i {
+        margin-right: 0.4rem;
+        color: #999;
+    }
+
+    span {
+        color: #ff6000;
+    }
+}
+
+
+.lunbo {
+    .swiper-container {
+        width: 100%;
+        height: 12rem;
+
+        .swiper-wrapper {
+            width: 100%;
+
+        }
+
+        .swiper-slide {
+            width: 100%;
+
+            img {
+                width: 100%;
+                height: 12rem;
+            }
+        }
+    }
+
+    .swiper-pagination-bullet {
+        width: 0.8rem;
+        height: 0.2rem;
+        background: #000;
+        opacity: .2;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: #00a6ff;
+    }
+
+}
+
+// 菜单
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0.6rem 0;
+    background-color: #fff;
+    >a {
+        width: 25%;
+        display: inline-block;
+        margin-top: 0.4rem;
+        height: 5rem;
+        img {
+            width: 3.4rem;
+            height: 3.4rem;
+            display: block;
+            margin: 0 auto;
+            border-radius: 50%;
+        }
+
+        p {
+            margin-top: 0.4rem;
+            height: 0.8rem;
+            line-height: 0.8rem;
+            text-align: center;
+        }
+    }
+}
+
+// 三合一
+.three{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0 0.5rem;
+    >div{
+        width: 50%;
+        background-color: #fff;
+    }
+    .headleft{
+        box-sizing: border-box;
+        height: 9rem;
+        padding: 1.6rem 0.9rem 0.48rem 1.2rem;
+        position: relative;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    .headright{
+        >div{
+            box-sizing: border-box;
+            height: 4.5rem;
+            position: relative;
+            padding: 0 1.2rem;
+        }
+    }
+}
+.all{
+    background-color: #fff;
+    margin-bottom: 0.1rem;
+    padding: 0.3rem 2.5%;
+    color: #666;
+}
+
+.s-list{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    a{
+        display: block;
+        width: 50%;
+        box-sizing: border-box;
+        padding: 1rem 0.7rem 0 1.2rem;
+        &:nth-child(odd){
+            border-right: 1px solid #f5f5f5;
+        }
+        p{
+            color: #ff6000;
+            span{
+                color: #999;
+            }
+            em{
+                display: inline-block;
+                background-color: #05b2c2;
+                color: #fff;
+                font-style: normal;
+                transform: scale(0.8);
+            }
+        }
+    }
+    .img-wrap{
+        padding: 0 1.5rem 1.5rem 0;
+        img{
+            width: 100%;
+        }
+    }
+}

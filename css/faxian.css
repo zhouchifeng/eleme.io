@@ -1,0 +1,151 @@
+body {
+  background-color: #f5f5f5;
+}
+.head {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.head > div {
+  width: 50%;
+  background-color: #fff;
+}
+.head .headleft {
+  box-sizing: border-box;
+  height: 11rem;
+  padding: 1.6rem 0.9rem 0.48rem 1.2rem;
+  position: relative;
+}
+.head .headleft h3 {
+  color: #ff9900;
+}
+.head .headleft img {
+  width: 4.8rem;
+  height: 4.8rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.head .headright > div {
+  box-sizing: border-box;
+  height: 5.5rem;
+  position: relative;
+  padding: 0 1.2rem;
+}
+.head .headright > div img {
+  width: 3.6rem;
+  height: 3.6rem;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.head h3 {
+  padding-top: 1rem;
+  font-size: 1.5rem;
+}
+.head p {
+  color: #666;
+}
+.head .ht2 {
+  color: #1ba9e1;
+}
+.head .ht3 {
+  color: #ed6660;
+}
+.recomm {
+  background-color: #fff;
+  margin-bottom: 1rem;
+}
+.recomm-title {
+  position: relative;
+}
+.recomm-title h3 {
+  padding-top: 1rem;
+  font-weight: 700;
+  font-size: 1.6rem;
+  text-align: center;
+}
+.recomm-title h3 span {
+  display: inline-block;
+  width: 1rem;
+  height: 1px;
+  vertical-align: middle ;
+  background-color: #000;
+}
+.recomm-title p {
+  color: #999;
+  text-align: center;
+  transform: scale(0.7);
+}
+.recomm-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.recomm-list > div {
+  width: 44%;
+  padding: 3%;
+}
+.recomm-list > div img {
+  width: 100%;
+}
+.recomm-list h2 {
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+.recomm-list p {
+  margin-left: -2rem;
+  transform: scale(0.7);
+}
+.recomm-list h3 {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #ff6000;
+  border-bottom: 2px dotted #f5f5f5;
+}
+.recomm-list h3 del {
+  display: inline-block;
+  font-size: 1rem;
+  color: #999;
+  transform: scale(0.75);
+}
+.recomm-list h4 {
+  margin-top: 0.5rem;
+  color: #999;
+  transform: scale(0.7);
+}
+.recomm-list h4 i {
+  margin-right: 0.5rem;
+  margin-left: -1.5rem;
+}
+.more {
+  text-align: center;
+  transform: scale(0.7);
+  color: #999;
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+}
+.gifts {
+  background-color: #fff;
+  padding-bottom: 0.5rem;
+  margin-bottom: 5rem;
+}
+.gifts .recomm-list > div {
+  width: 30%;
+  padding: 0;
+  position: relative;
+}
+.gifts .recomm-list span {
+  background-color: #333;
+  padding: 0.1rem;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.gifts .recomm-list p {
+  transform: scale(1);
+  margin: 0;
+}

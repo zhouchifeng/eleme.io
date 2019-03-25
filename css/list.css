@@ -1,0 +1,148 @@
+.list {
+  width: 95%;
+  margin: 0 auto;
+}
+.list .classify {
+  height: 2.8rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.list .classify a {
+  width: 28%;
+  height: 2.8rem;
+  line-height: 2.8rem;
+  text-align: center;
+  color: #666;
+}
+.list .classify a img {
+  width: 1rem;
+  height: 1rem;
+}
+.list .classify a i {
+  font-size: 1rem;
+}
+.list .shoplist {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  padding: 1rem 0;
+}
+.shopleft {
+  width: 6rem;
+  margin-left: 1rem;
+  margin-right: 0.6rem;
+}
+.shopleft img {
+  width: 100%;
+}
+.shopright {
+  position: relative;
+  width: 100%;
+}
+.shopright h3 {
+  font-weight: 700;
+  position: relative;
+}
+.shopright h3 em {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.shopright h3 em i {
+  display: inline-block;
+  font-size: 1rem;
+  transform: scale(0.8);
+}
+.shopright .shopbrand {
+  display: inline-block;
+  width: 2rem;
+  height: 1.2rem;
+  padding: 0.2rem;
+  font-weight: 700;
+  margin-right: 0.3rem;
+  background-image: linear-gradient(-139deg, #fff100, #ffe339);
+  font-size: 1rem;
+  transform: scale(0.8);
+  color: #6f3f15;
+}
+.shopright p {
+  font-size: 1rem;
+  position: relative;
+}
+.shopright p span {
+  display: inline-block;
+  transform: scale(0.7);
+}
+.shopright p span:nth-child(1) {
+  margin-left: -1.4rem;
+}
+.shopright p .zhuansong {
+  display: inline-block;
+  background-image: linear-gradient(45deg, #0085ff, #0af);
+  font-size: 1rem;
+  color: #fff;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: scale(0.7) translateY(-50%);
+}
+.shopright p .shoptime {
+  transform: scale(0.7) translateY(-50%);
+  position: absolute;
+  right: -0.4rem;
+  top: 50%;
+}
+.shopright p i {
+  color: #fff100;
+  display: inline-block;
+  font-size: 1rem;
+  margin-right: -0.2rem;
+  transform: scale(0.7);
+}
+.shopright h4 {
+  transform: scale(0.8);
+  color: #e8470b;
+  margin: 0.4rem 0 0.4rem -1.4rem;
+}
+.shopright h4 span {
+  border: 1px solid #dddddd;
+  color: #666666;
+}
+.shopright h4 img {
+  width: 0.8rem;
+  height: 0.8rem;
+  margin: 0 0.1rem 0 0.4rem;
+}
+.shophd {
+  position: relative;
+  color: #666;
+}
+.shophd .hdpull {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: scale(0.8);
+}
+.shophd p {
+  transform: scale(0.8);
+  margin-left: -1rem;
+}
+.shophd p span {
+  color: #fff;
+  border-radius: 0.3rem;
+  padding: 0.2rem .4rem;
+}
+.shophd p .jiang {
+  background-color: #f07373;
+}
+.shophd p .shou {
+  background-color: #70bc46;
+}
+.shophd p .te {
+  background-color: #f1884f;
+}
+.shophd p .pei {
+  background-color: #999999;
+}

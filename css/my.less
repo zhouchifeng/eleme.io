@@ -1,0 +1,99 @@
+body{
+    background-color: #f5f5f5;
+}
+.mytop{
+    padding: 1.5rem 1.2rem;
+    background-image: linear-gradient(90deg,#0af,#0085ff);
+    display: flex;
+    color: #fff;
+    align-items: center;
+    .photo{
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        background-color: #fff;
+    }
+    .name{
+        width: 25.6rem;
+        margin-left: 1.2rem;
+        position: relative;
+        h3{
+            font-weight: 700;
+            font-size: 1.6rem;
+            margin-bottom: 0.8rem;
+        }
+        p{
+            i{
+                font-size: 1rem;
+            }
+            font-size: 1rem;
+        }
+        span{
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
+// 我的金币
+.gold{
+    display: flex;
+    padding: 1.5rem 0;
+    background-color: #fff;
+    >div{
+        width: 50%;
+    }
+    h2{
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+    .goldleft{
+        border-right: 2px solid #f5f5f5;
+    }
+    .goldleft>h2{
+        color: rgb(255, 95, 62);
+    }
+    .goldright>h2{
+        color: rgb(106, 194, 11);
+    }
+}
+
+//内容
+.mycon{
+    div{
+        padding: 0.8rem 0;
+        background-color: #fff;
+        border-bottom: 1px solid #f5f5f5;
+        position: relative;
+        font-size: 1.4rem;
+        &:nth-child(1){
+            margin: 1rem 0;
+        }
+        &:nth-child(3){
+            margin-bottom: 1rem;
+        }
+    }
+    i{
+        font-size: 1.4rem;
+        color: #0085ff;
+        margin: 0 1rem;
+    }
+    span{
+        color: #999;
+        position: absolute;
+        right: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    >p{
+        margin-top: 1.2rem;
+        text-align: center;
+        color: #4da6f0;
+        font-size: 1.4rem;
+    }
+}
