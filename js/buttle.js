@@ -3,14 +3,16 @@ $(function () {
     var top, right;
     var pageWidth = parseInt(boxDom.width()) / 10;
     var pageHeight = parseInt(boxDom.height()) / 10;
-    var text = ["aaaaaa", "bbbbbb", "cccccc", "dddddd", "eeeeee", "ffffff", "gggggg", "hhhhhh", "iiiiii", "jjjjjj", "kkkkkk",
-        "llllllll", "mmmmm", "nnnnnn", "ooooooo", "pppppp", "qqqqq", "rrrrrr", "ssssss", "tttttt", "uuuuuu", "vvvvvv", "wwwwww", "bbbbbb", "cccccc", "dddddd", "eeeeee", "ffffff", "gggggg", "hhhhhh", "iiiiii", "jjjjjj", "kkkkkk"
+    var text = ["华哥你看的到吗", "我觉得你应该看的到", "你真的看得到嘛", "可能你看得到", "也可能你看不到", "就当你能看到吧", "你终于看到了", "看到了啥", "又没看到？", "楼上兄弟66666", "楼上的楼上66666"
+        
     ]
-    $.each(text, function (i, str) {
-        setTimeout(() => {
-            auto(str);
-        }, i * 100);
-    })
+    setInterval(() => {
+        $.each(text, function (i, str) {
+            setTimeout(() => {
+                auto(str);
+            }, i * 100);
+        })
+    }, text.length*100);
 
     function auto(str) {
         //生成一个元素
@@ -29,7 +31,7 @@ $(function () {
         //首先有一个span，只让最后一个动起来
         var spandom = $(".container>span:last-child"); //找到最后一个span
         spandom.animate({
-            "right": pageWidth + 10 + "rem",
+            "right": pageWidth + 20 + "rem",
         }, 6000, function () {
             $(this).remove();
         });
